@@ -1,0 +1,33 @@
+services:
+  php:
+    build:
+      context: .
+      dockerfile: php/Dockerfile
+    container_name: php-tasks-api-php
+    volumes:
+      - ./src:/var/www/html
+      - ./vendor:/var/www/html/vendor
+      - ./data:/var/www/html/data
+    ports:
+      - "9000:9000"
+    networks:
+      - app-network
+
+  nginx:
+    image: nginx:alpine
+    container_name: php-tasks-api-nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/html
+      - ./vendor:/var/www/html/vendor
+      - ./data:/var/www/html/data
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

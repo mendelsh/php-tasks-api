@@ -1,0 +1,39 @@
+# Dependencies
+/vendor/
+/node_modules/
+
+# Database directory (database files are auto generated)
+/data/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Docker
+.docker/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Composer
+composer.phar
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+

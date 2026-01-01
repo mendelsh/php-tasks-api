@@ -1,0 +1,11 @@
+{
+    "name": "mendel/php-tasks-api",
+    "description": "A simple PHP tasks API",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Models\\": "models/"
+        }
+    },
+    "require": {}
+}
