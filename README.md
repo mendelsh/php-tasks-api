@@ -70,7 +70,7 @@ GET /tasks/:id
 
 **Response:**
 ```json
-{"id": 1, "title": "My first task"}
+{"id": 1, "title": "First task"}
 ```
 
 ### Create a new task
