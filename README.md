@@ -58,7 +58,7 @@ GET /tasks
 **Response:**
 ```json
 [
-  {"id": 1, "title": "My first task"},
+  {"id": 1, "title": "First task"},
   {"id": 2, "title": "Another task"}
 ]
 ```
