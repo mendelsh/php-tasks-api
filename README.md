@@ -21,7 +21,7 @@ A simple RESTful API for managing tasks, built with PHP 8.3, SQLite, Docker, and
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/mendelsh/php-tasks-api.git
 cd php-tasks-api
 ```
 
